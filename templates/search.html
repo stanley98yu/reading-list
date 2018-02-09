@@ -2,7 +2,9 @@
 <html>
   <head>
   	<meta charset="utf-8">
-  	  <title>Search</title>
+  	<title>Search</title>
+    <link rel="stylesheet" href="static/css/foundation.css">
+    <link rel="stylesheet" href="static/css/app.css">
   </head>
 
   <body>
@@ -10,7 +12,12 @@
   	<form action="/search" method="post">
   		<input type="text" placeholder="Search for a book" name="user_search"
   		    required/>
-  		<button type="submit">Search</button>
+  		<button type="submit" class="postfix search-button">Search</button>
   	</form>
   </body>
+  <script src="static/js/vendor/jquery.js"></script>
+  <script src="static/js/foundation.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
 </html>
