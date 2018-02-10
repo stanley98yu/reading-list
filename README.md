@@ -6,4 +6,3 @@ Languages: Python, HTML/CSS/Javascript
 Created by Stanley Yu.
 
 ![Example Page](/static/img/example.png)
-Format: ![Alt Text](example)
