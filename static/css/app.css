@@ -34,6 +34,7 @@ button {
 
 button:hover {
     background-color: #D77E22;
+    cursor: pointer;
 }
 
 .launch-button {
