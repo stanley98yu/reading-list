@@ -1,23 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-  	<meta charset="utf-8">
-  	<title>Search</title>
-    <link rel="stylesheet" href="static/css/foundation.css">
-    <link rel="stylesheet" href="static/css/app.css">
-  </head>
-
-  <body>
-  	<h1>Search</h1>
-  	<form action="/search" method="post">
-  		<input type="text" placeholder="Search for a book" name="user_search"
-  		    required/>
-  		<button type="submit" class="postfix search-button">Search</button>
-  	</form>
-  </body>
-  <script src="static/js/vendor/jquery.js"></script>
-  <script src="static/js/foundation.js"></script>
-  <script>
-    $(document).foundation();
-  </script>
-</html>
+{% extends "base.html" %}
+{% block title %}Search{% endblock %}
+{% block body %}
+  <h1>Search</h1>
+  <form action="/search" method="POST">
+    <div class="small-10 columns">
+      <input type="text" placeholder="Search for a book" name="user_search" required/>
+    </div>
+    <div class="small-2 columns">
+      <button type="submit" class="postfix search-button">Search</button>
+    </div>
+  </form>
+  {% block results %}{% endblock %}
+{% endblock %}

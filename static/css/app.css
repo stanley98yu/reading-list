@@ -1,6 +1,7 @@
 body, html {
     height: 100%;
-    width: 100%;
+    width: 95%;
+    margin: 0 auto
 }
 
 body {
@@ -12,7 +13,7 @@ body {
     margin-top: 50px;
     text-align: center;
     background-color: rgba(242, 242, 242, 0.7);
-    padding: 15px 0px 70px 0px;
+    padding: 15px 20px 70px 20px;
 }
 
 .panel h1 {
@@ -42,4 +43,14 @@ button:hover {
 
 .search-button {
     padding: 5px 20px;
+}
+
+.results {
+    text-align: left;
+    margin-top: 100px;
+}
+
+li {
+    list-style-type: none;
+    padding-bottom: 25px;
 }
