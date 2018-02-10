@@ -4,3 +4,6 @@ Simple web application for creating reading lists to save favorite books for mul
 Languages: Python, HTML/CSS/Javascript
 
 Created by Stanley Yu.
+
+![Example Page](/static/img/example)
+Format: ![Alt Text](example)
